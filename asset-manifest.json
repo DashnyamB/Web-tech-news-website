@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Web-tech-news-website/static/css/main.c6f2e739.chunk.css",
-    "main.js": "/Web-tech-news-website/static/js/main.52c6935a.chunk.js",
-    "main.js.map": "/Web-tech-news-website/static/js/main.52c6935a.chunk.js.map",
+    "main.css": "/Web-tech-news-website/static/css/main.44b1df3b.chunk.css",
+    "main.js": "/Web-tech-news-website/static/js/main.ffd5d9c4.chunk.js",
+    "main.js.map": "/Web-tech-news-website/static/js/main.ffd5d9c4.chunk.js.map",
     "runtime-main.js": "/Web-tech-news-website/static/js/runtime-main.ba137a28.js",
     "runtime-main.js.map": "/Web-tech-news-website/static/js/runtime-main.ba137a28.js.map",
     "static/js/2.3e04f1f5.chunk.js": "/Web-tech-news-website/static/js/2.3e04f1f5.chunk.js",
     "static/js/2.3e04f1f5.chunk.js.map": "/Web-tech-news-website/static/js/2.3e04f1f5.chunk.js.map",
     "index.html": "/Web-tech-news-website/index.html",
-    "static/css/main.c6f2e739.chunk.css.map": "/Web-tech-news-website/static/css/main.c6f2e739.chunk.css.map",
+    "static/css/main.44b1df3b.chunk.css.map": "/Web-tech-news-website/static/css/main.44b1df3b.chunk.css.map",
     "static/js/2.3e04f1f5.chunk.js.LICENSE.txt": "/Web-tech-news-website/static/js/2.3e04f1f5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ba137a28.js",
     "static/js/2.3e04f1f5.chunk.js",
-    "static/css/main.c6f2e739.chunk.css",
-    "static/js/main.52c6935a.chunk.js"
+    "static/css/main.44b1df3b.chunk.css",
+    "static/js/main.ffd5d9c4.chunk.js"
   ]
 }
