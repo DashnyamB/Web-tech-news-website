@@ -1,0 +1,25 @@
+@import "../../styles/main.scss";
+
+.menu-item {
+  list-style: none;
+  text-transform: uppercase;
+  font-family: $roboto;
+  font-weight: 600;
+  padding: 5px 20px;
+  @include atMedium {
+    margin-right: 1rem;
+    padding: 0;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $melon-color;
+    transition: all 0.3s ease;
+    &:hover {
+      color: $pale-pink;
+    }
+  }
+}

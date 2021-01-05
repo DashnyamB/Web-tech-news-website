@@ -1,0 +1,38 @@
+@import "../../styles/main.scss";
+.mobile-menu {
+  height: 100vh;
+  width: 80vw;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: -80vw;
+  transition: 0.5s ease-in-out;
+  text-align: center;
+  &__logo {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &--text {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      span {
+        font-family: $roboto;
+        color: $peach-color;
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+  &__nav {
+    display: flex;
+    justify-content: center;
+  }
+  &--open {
+    left: 0;
+    z-index: 200;
+  }
+}
