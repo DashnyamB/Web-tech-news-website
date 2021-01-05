@@ -1,0 +1,111 @@
+@import "../../styles/main.scss";
+
+.card {
+  margin-top: 0.8rem;
+  &:first-child {
+    margin-top: 0;
+  }
+  width: 100%;
+  height: 8rem;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+  @include atSmall {
+    flex-direction: column;
+    width: 32.5%;
+    margin-top: 0;
+    height: 15rem;
+    margin-bottom: 0.8rem;
+  }
+  @include atMedium {
+    width: 24.5%;
+    height: 20rem;
+  }
+
+  &:hover .card__header__overlay {
+    visibility: visible;
+    animation: fade 0.8s;
+  }
+  &:hover .card__footer__title {
+    color: $peach-color;
+  }
+  &:hover .card__header__image img {
+    transform: scale(1.3);
+  }
+
+  &__header {
+    width: 55%;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    @include atSmall {
+      width: 100%;
+      height: 10rem;
+    }
+    @include atMedium {
+      height: 13rem;
+    }
+    &__overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 181, 167, 0.6);
+      visibility: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &__btn {
+        padding: 7px 13px;
+        border-radius: 50px;
+        border: none;
+        background-color: #613dc1;
+        font-family: $roboto;
+        color: #fff;
+        cursor: pointer;
+        transition: border 0.3s ease, background-color 0.3s, color 0.3s;
+        &:hover {
+          background: none;
+          border: 1px solid #613dc1;
+          color: #613dc1;
+        }
+      }
+    }
+    &__image {
+      width: 100%;
+      height: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+  }
+  &__footer {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    width: 45%;
+    @include atSmall {
+      width: 100%;
+      height: 5rem;
+    }
+    @include atMedium {
+      height: 7rem;
+    }
+    &__title {
+      font-family: $roboto;
+      color: $text-color;
+      font-size: 12px;
+      transition: color 0.3s ease;
+      @include atMedium {
+        font-size: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import "../../styles/main.scss";
+
+.popular-post {
+  @include sectionPadding;
+  &__title {
+    text-align: left;
+    padding-bottom: 1rem;
+    font-family: $roboto;
+    font-size: 1.5rem;
+    color: $melon-color;
+    @include atMedium {
+      font-size: 2rem;
+    }
+  }
+}
