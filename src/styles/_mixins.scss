@@ -16,6 +16,10 @@
 }
 
 @mixin sectionPadding {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  @include atSmall {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
 }
