@@ -1,0 +1,66 @@
+@import "../../styles/main.scss";
+
+.fluid-post {
+  width: 100%;
+  height: 25rem;
+  background: url("https://i0.wp.com/media.starbiz.net/editors/33/2020/11/26/lIb4x9JlGtcUbjDhJR2YOsARNXgSA2HH56ammgqw.jpeg?resize=780%2C486&ssl=1")
+    no-repeat center fixed;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $text-color;
+    opacity: 0.5;
+  }
+  &__info {
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $roboto;
+    text-align: left;
+    width: 100%;
+
+    @include atSmall {
+      width: 90%;
+    }
+    @include atMedium {
+      width: 65%;
+    }
+    &__title {
+      font-weight: 700;
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+    }
+    &__except {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+    &__btn {
+      background-color: $melon-color;
+      padding: 15px 40px;
+      border-radius: 50px;
+      border: none;
+      outline: none;
+      color: #fff;
+      font-family: $roboto;
+      font-size: 1rem;
+      transition: 0.3s ease;
+      cursor: pointer;
+      &:hover {
+        background: transparent;
+        border: 1px solid $melon-color;
+        color: $melon-color;
+      }
+    }
+  }
+}

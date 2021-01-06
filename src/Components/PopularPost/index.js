@@ -8,10 +8,18 @@ const PopularPost = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    axios.get("/popularPost.json").then((res) => {
-      console.log(Object.entries(res.data).reverse());
-      setPosts(Object.entries(res.data).reverse());
-    });
+    axios
+      .get("/popularPost.json")
+      .then((res) => {
+        console.log(Object.entries(res.data).reverse());
+        setPosts(Object.entries(res.data).reverse());
+      })
+      .catch((err) => {
+        console.log(
+          "Өгөгдөл татахад ямар нэгэн алдаа гарлаа. Алдааны мэдээлэл : ",
+          err
+        );
+      });
   }, []);
   console.log(posts);
   return (

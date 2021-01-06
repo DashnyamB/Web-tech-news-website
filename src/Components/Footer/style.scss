@@ -1,0 +1,14 @@
+@import "../../styles/main.scss";
+
+.footer {
+  background-color: $primary-color;
+  color: $text-color;
+  padding: 10px;
+
+  &__copyright {
+    a {
+      color: $melon-color;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,7 +1,12 @@
 import React from "react";
+import AddPost from "../../Components/AddPost";
 
 const AdminPage = () => {
-  return <main>Hello this is admin page</main>;
+  return (
+    <main>
+      <AddPost />
+    </main>
+  );
 };
 
 export default AdminPage;
