@@ -6,7 +6,7 @@ const Menu = () => {
   return (
     <ul className="menu">
       <MenuItem link="/" menuName="Нүүр хуудас" />
-      <MenuItem link="/" menuName="Мэдээ оруулах" />
+      <MenuItem link="/admin" menuName="Мэдээ оруулах" />
     </ul>
   );
 };

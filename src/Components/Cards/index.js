@@ -2,17 +2,12 @@ import React from "react";
 import Card from "../Card";
 import "./style.scss";
 
-const Cards = () => {
+const Cards = (props) => {
   return (
     <main className="cards">
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      {props.posts.slice(0, 8).map((post) => (
+        <Card post={post} />
+      ))}
     </main>
   );
 };

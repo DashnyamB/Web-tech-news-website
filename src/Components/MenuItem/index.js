@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./style.scss";
 const MenuItem = (props) => {
   return (
     <li className="menu-item">
-      <a href={props.link}>{props.menuName}</a>
+      <Link to={props.link}>{props.menuName}</Link>
     </li>
   );
 };
